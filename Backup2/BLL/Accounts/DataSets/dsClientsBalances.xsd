@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsClientsBalances" targetNamespace="http://www.tempuri.org/dsClientsBalances.xsd" xmlns:mstns="http://www.tempuri.org/dsClientsBalances.xsd" xmlns="http://www.tempuri.org/dsClientsBalances.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsClientsBalances" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Accounts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ClientID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="ClientName" type="xs:string" />
+							<xs:element name="AccountID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TypeName" type="xs:string" />
+							<xs:element name="CurrencyID" type="xs:string" />
+							<xs:element name="Saldo" type="xs:double" />
+							<xs:element name="AccountTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SumReserved" type="xs:double" />
+							<xs:element name="SumWaited" type="xs:double" />
+							<xs:element name="DisposableSum" msdata:ReadOnly="true" type="xs:double" minOccurs="0" />
+							<xs:element name="ClientGroupName" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="dsClientsBalancesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Accounts" />
+			<xs:field xpath="mstns:AccountID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

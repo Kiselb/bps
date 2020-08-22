@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsTransactionList" targetNamespace="http://www.tempuri.org/dsTransactionList.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsTransactionList.xsd" xmlns="http://www.tempuri.org/dsTransactionList.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsTransactionList" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TransactionsTypes">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransactionTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TransactionTypeName" type="xs:string" />
+							<xs:element name="IsInner" type="xs:boolean" />
+							<xs:element name="UseOrgAcc" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Transactions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransactionTypeName" type="xs:string" />
+							<xs:element name="TransactionIsInner" type="xs:boolean" />
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientIsInner" type="xs:boolean" minOccurs="0" />
+							<xs:element name="RAccountFrom" type="xs:string" minOccurs="0" />
+							<xs:element name="RAccountTo" type="xs:string" minOccurs="0" />
+							<xs:element name="OrgNameFrom" type="xs:string" minOccurs="0" />
+							<xs:element name="OrgIDFrom" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="OrgIDTo" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="OrgNameTo" type="xs:string" minOccurs="0" />
+							<xs:element name="PaymentOrderStatusName" type="xs:string" minOccurs="0" />
+							<xs:element name="TransactionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TransactionTypeID" type="xs:int" />
+							<xs:element name="TransactionCommited" type="xs:boolean" />
+							<xs:element name="TransactionPosted" type="xs:boolean" />
+							<xs:element name="ClientID" type="xs:int" minOccurs="0" />
+							<xs:element name="SumFrom" type="xs:double" />
+							<xs:element name="SumTo" type="xs:double" />
+							<xs:element name="CurrencyRate" type="xs:double" />
+							<xs:element name="AccountIDFrom" type="xs:int" minOccurs="0" />
+							<xs:element name="AccountIDTo" type="xs:int" minOccurs="0" />
+							<xs:element name="ServiceCharge" type="xs:double" />
+							<xs:element name="ServiceChargeTo" type="xs:double" minOccurs="0" />
+							<xs:element name="DocumentID" type="xs:int" minOccurs="0" />
+							<xs:element name="Purpose" type="xs:string" minOccurs="0" />
+							<xs:element name="Remarks" type="xs:string" minOccurs="0" />
+							<xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InitDate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CompleteDate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransactionIDParent" type="xs:int" minOccurs="0" />
+							<xs:element name="ClientRequestID" type="xs:int" minOccurs="0" />
+							<xs:element name="PaymentOrderStatusID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="CurrencyFrom" type="xs:string" />
+							<xs:element name="CurrencyTo" type="xs:string" />
+							<xs:element name="TrClientName" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:TransactionsTypes" />
+			<xs:field xpath="mstns:TransactionTypeID" />
+		</xs:unique>
+		<xs:key name="dsTransactionListKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Transactions" />
+			<xs:field xpath="mstns:TransactionID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

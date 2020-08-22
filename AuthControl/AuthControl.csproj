@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>AuthControl</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AuthControl</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AM_Controls, Version=1.0.2302.31501, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AM_Lib\bin\Debug\AM_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Security">
+      <Name>System.Security</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuthComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsUserInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUserInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermissionsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermissionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSD\dsGroupsPermissions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGroupsPermissions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\dsPermissionsList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPermissionsList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\dsUserGroups.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUserGroups.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\dsUsers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\dsUsersPermissions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUsersPermissions.xsd</DependentUpon>
+    </Compile>
+    <Content Include="dsUserInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserInfo.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsGroupsPermissions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGroupsPermissions.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsPermissionsList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPermissionsList.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUserGroups.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserGroups.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUsers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsers.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUsersPermissions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsersPermissions.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="_Icons\Book.ico" />
+    <Content Include="_Icons\Doc.ico" />
+    <Content Include="_Icons\DocDel.ico" />
+    <Content Include="_Icons\FOLDER01.ICO" />
+    <Content Include="_Icons\FOLDER02.ICO" />
+    <Content Include="_Icons\FOLDER04.ICO" />
+    <Content Include="_Icons\groupH.ico" />
+    <Content Include="_Icons\groupHDel1.ico" />
+    <Content Include="_Icons\HLP.ICO" />
+    <Content Include="_Icons\HLPDEL.ICO" />
+    <Content Include="_Icons\LIGHTOFF.ICO" />
+    <Content Include="_Icons\LIGHTON.ICO" />
+    <Content Include="_Icons\MSGBOX01.ICO" />
+    <Content Include="_Icons\New1.ico" />
+    <Content Include="_Icons\Refresh2.ico" />
+    <Content Include="_Icons\SECUR03.ICO" />
+    <Content Include="_Icons\SECUR08.ICO" />
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserGroup.resx">
+      <DependentUpon>AddUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthComp.resx">
+      <DependentUpon>AuthComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionsEdit.resx">
+      <DependentUpon>PermissionsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionsList.resx">
+      <DependentUpon>PermissionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dsUserInfo.xsx">
+      <DependentUpon>dsUserInfo.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsGroupsPermissions.xsx">
+      <DependentUpon>dsGroupsPermissions.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsPermissionsList.xsx">
+      <DependentUpon>dsPermissionsList.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUserGroups.xsx">
+      <DependentUpon>dsUserGroups.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUsers.xsx">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUsersPermissions.xsx">
+      <DependentUpon>dsUsersPermissions.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsBankAccountsStates" targetNamespace="http://www.tempuri.org/dsBankAccountsStates.xsd" xmlns:mstns="http://www.tempuri.org/dsBankAccountsStates.xsd" xmlns="http://www.tempuri.org/dsBankAccountsStates.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsBankAccountsStates" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Orgs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OrgName" type="xs:string" />
+							<xs:element name="RAccount" type="xs:string" />
+							<xs:element name="BankName" type="xs:string" />
+							<xs:element name="KAccount" type="xs:string" />
+							<xs:element name="CityName" type="xs:string" />
+							<xs:element name="Saldo" type="xs:double" />
+							<xs:element name="CurrencyID" type="xs:string" />
+							<xs:element name="AccountID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="BankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CityID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="OrgsAccountsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SumReserved" type="xs:double" />
+							<xs:element name="SumWaited" type="xs:double" />
+							<xs:element name="DisposableSum" msdata:ReadOnly="true" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="OrgAccountsBalances_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Orgs" />
+			<xs:field xpath="mstns:AccountID" />
+			<xs:field xpath="mstns:BankID" />
+			<xs:field xpath="mstns:CityID" />
+			<xs:field xpath="mstns:OrgsAccountsID" />
+			<xs:field xpath="mstns:OrgID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

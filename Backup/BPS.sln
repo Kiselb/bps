@@ -1,0 +1,82 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPS", "BPS\BPS.csproj", "{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8} = {62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthControl", "AuthControl\AuthControl.csproj", "{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5} = {5626E254-4C0E-466A-AA6A-7CFA436C99E5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM_Controls", "..\Am_controls\AM_Controls.csproj", "{5626E254-4C0E-466A-AA6A-7CFA436C99E5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM_Lib", "AM_Lib\AM_Lib.csproj", "{CAB2587A-F363-4FC2-BE7C-0F5FCE4291A0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {E7DF84D4-D7A2-4222-909F-5538B7AA0B9D}
+		SccProjectUniqueName1 = BPS\\BPS.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = BPS\\
+		SccProjectUniqueName2 = AuthControl\\AuthControl.csproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = AuthControl\\
+		SccProjectUniqueName3 = ..\\Am_controls\\AM_Controls.csproj
+		SccProjectName3 = \u0022$/AM_Controls\u0022,\u0020CUCAAAAA
+		SccLocalPath3 = ..\\Am_controls
+		CanCheckoutShared = false
+		SccProjectUniqueName4 = AM_Lib\\AM_Lib.csproj
+		SccLocalPath4 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = AM_Lib\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}.Debug.ActiveCfg = Debug|.NET
+		{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}.Debug.Build.0 = Debug|.NET
+		{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}.Release.ActiveCfg = Release|.NET
+		{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}.Release.Build.0 = Release|.NET
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}.Debug.ActiveCfg = Debug|.NET
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}.Debug.Build.0 = Debug|.NET
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}.Release.ActiveCfg = Release|.NET
+		{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}.Release.Build.0 = Release|.NET
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5}.Debug.ActiveCfg = Debug|.NET
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5}.Debug.Build.0 = Debug|.NET
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5}.Release.ActiveCfg = Release|.NET
+		{5626E254-4C0E-466A-AA6A-7CFA436C99E5}.Release.Build.0 = Release|.NET
+		{CAB2587A-F363-4FC2-BE7C-0F5FCE4291A0}.Debug.ActiveCfg = Debug|.NET
+		{CAB2587A-F363-4FC2-BE7C-0F5FCE4291A0}.Debug.Build.0 = Debug|.NET
+		{CAB2587A-F363-4FC2-BE7C-0F5FCE4291A0}.Release.ActiveCfg = Release|.NET
+		{CAB2587A-F363-4FC2-BE7C-0F5FCE4291A0}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		_ProjectNotes.txt = _ProjectNotes.txt
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

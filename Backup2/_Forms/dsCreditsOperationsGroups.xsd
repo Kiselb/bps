@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsCreditsOperationsGroups" targetNamespace="http://www.tempuri.org/dsCreditsOperationsGroups.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsCreditsOperationsGroups.xsd" xmlns="http://www.tempuri.org/dsCreditsOperationsGroups.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsCreditsOperationsGroups" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="CreditsOperationsGroups">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="GroupID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="GroupDate" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:int" minOccurs="0" />
+							<xs:element name="InstalmentSum" type="xs:double"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:CreditsOperationsGroups" />
+			<xs:field xpath="mstns:GroupID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

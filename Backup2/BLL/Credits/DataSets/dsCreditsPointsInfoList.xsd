@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsCreditsPointsInfoList" targetNamespace="http://www.tempuri.org/dsCreditsPointsInfoList.xsd"
+	xmlns:mstns="http://www.tempuri.org/dsCreditsPointsInfoList.xsd" xmlns="http://www.tempuri.org/dsCreditsPointsInfoList.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsCreditsPointsInfoList" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Table">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PointID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="PointDate" type="xs:dateTime" />
+							<xs:element name="PointSum" type="xs:double" />
+							<xs:element name="PointPercent" type="xs:double" />
+							<xs:element name="PointSumSink" type="xs:double" minOccurs="0" />
+							<xs:element name="PointSumSinkLastDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PointPercentNormalDebt" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentNormalSink" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentNormalDue" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentNormalDebtLastDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PointPercentPenaltyDebt" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentPenaltySink" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentPenaltyDue" type="xs:double" minOccurs="0" />
+							<xs:element name="PointPercentPenaltyDebtLastDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PointSumIncrease" type="xs:double" minOccurs="0" default="0" />
+							<xs:element name="PointSumIncreaseLastDate" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Table" />
+			<xs:field xpath="mstns:PointID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsRequestsNotLinked" targetNamespace="http://www.tempuri.org/dsRequestsNotLinked.xsd" xmlns:mstns="http://www.tempuri.org/dsRequestsNotLinked.xsd" xmlns="http://www.tempuri.org/dsRequestsNotLinked.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsRequestsNotLinked" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="GetRequestsNotLinked">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RequestID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="RequestTypeID" type="xs:int" />
+              <xs:element name="RequestTypeName" type="xs:string" />
+              <xs:element name="ClientID" type="xs:int" />
+              <xs:element name="ClientName" type="xs:string" />
+              <xs:element name="RequestSum" type="xs:double" />
+              <xs:element name="RequestDate" type="xs:dateTime" />
+              <xs:element name="RequestStateID" type="xs:int" />
+              <xs:element name="RequestStateName" type="xs:string" />
+              <xs:element name="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountTo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgTo" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgFromINN" type="xs:string" minOccurs="0" />
+              <xs:element name="OrgToINN" type="xs:string" minOccurs="0" />
+              <xs:element name="IsIn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsOut" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CurrencyFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrencyTo" type="xs:string" minOccurs="0" />
+              <xs:element name="ExecutedSum" type="xs:double" />
+              <xs:element name="RequiredSum" msdata:ReadOnly="true" type="xs:double" minOccurs="0" />
+              <xs:element name="Purpose" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

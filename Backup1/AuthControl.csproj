@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>AuthControl</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AuthControl</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>D:\Projects\BPS 2016\bps\Backup\AuthControl\</UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Am_controls\AM_Controls.csproj">
+      <Name>AM_Controls</Name>
+      <Project>{5626E254-4C0E-466A-AA6A-7CFA436C99E5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Security">
+      <Name>System.Security</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuthComp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsUserInfo.cs">
+      <DependentUpon>dsUserInfo.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Logon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermissionsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermissionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XSD\dsGroupsPermissions.cs">
+      <DependentUpon>dsGroupsPermissions.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="XSD\dsPermissionsList.cs">
+      <DependentUpon>dsPermissionsList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="XSD\dsUserGroups.cs">
+      <DependentUpon>dsUserGroups.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="XSD\dsUsers.cs">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="XSD\dsUsersPermissions.cs">
+      <DependentUpon>dsUsersPermissions.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="dsUserInfo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserInfo.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsGroupsPermissions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGroupsPermissions.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsPermissionsList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPermissionsList.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUserGroups.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserGroups.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUsers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsers.cs</LastGenOutput>
+    </Content>
+    <Content Include="XSD\dsUsersPermissions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsersPermissions.cs</LastGenOutput>
+    </Content>
+    <Content Include="_Icons\Book.ico" />
+    <Content Include="_Icons\Doc.ico" />
+    <Content Include="_Icons\DocDel.ico" />
+    <Content Include="_Icons\FOLDER01.ICO" />
+    <Content Include="_Icons\FOLDER02.ICO" />
+    <Content Include="_Icons\FOLDER04.ICO" />
+    <Content Include="_Icons\groupH.ico" />
+    <Content Include="_Icons\groupHDel1.ico" />
+    <Content Include="_Icons\HLP.ICO" />
+    <Content Include="_Icons\HLPDEL.ICO" />
+    <Content Include="_Icons\LIGHTOFF.ICO" />
+    <Content Include="_Icons\LIGHTON.ICO" />
+    <Content Include="_Icons\MSGBOX01.ICO" />
+    <Content Include="_Icons\New1.ico" />
+    <Content Include="_Icons\Refresh2.ico" />
+    <Content Include="_Icons\SECUR03.ICO" />
+    <Content Include="_Icons\SECUR08.ICO" />
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserGroup.resx">
+      <DependentUpon>AddUserGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuthComp.resx">
+      <DependentUpon>AuthComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionsEdit.resx">
+      <DependentUpon>PermissionsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermissionsList.resx">
+      <DependentUpon>PermissionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="dsUserInfo.xsx">
+      <DependentUpon>dsUserInfo.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsGroupsPermissions.xsx">
+      <DependentUpon>dsGroupsPermissions.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsPermissionsList.xsx">
+      <DependentUpon>dsPermissionsList.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUserGroups.xsx">
+      <DependentUpon>dsUserGroups.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUsers.xsx">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+    </None>
+    <None Include="XSD\dsUsersPermissions.xsx">
+      <DependentUpon>dsUsersPermissions.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

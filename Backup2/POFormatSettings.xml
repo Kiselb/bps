@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settingscollection xmlns="http://tempuri.org/POFormatSettings.xsd">
+  <settings name="Structurized Text File">
+    <description>Text file, structurized in special format</description>
+    <codepage>win-1251</codepage>
+    <fields delimiter=";">
+      <field header="-----&#xD;&#xA;ТИП КОМАНДЫ: 001002&#xD;&#xA;ВЕРСИЯ: 05&#xD;&#xA;&#xD;&#xA;ПЛАТЕЖНЫЙ ДОКУМЕНТ&#xD;&#xA;" type="ExtField" delimiter="" length="-1" align="1" filler="">Заголовок пл поручения</field>
+      <field header="НОМЕР:" type="DBField" delimiter="&#xD;&#xA;" length="-1" align="2" filler=" ">Номер документа</field>
+      <field header="ДАТА ДОКУМЕНТА:" type="DBField" delimiter="&#xD;&#xA;" length="-1" align="2" filler=" ">Дата документа</field>
+      <field header="СУММА:" type="DBField" delimiter="&#xD;&#xA;" length="32" align="2" filler="0">Сумма</field>
+      <field header="ПЛАТЕЛЬЩИК:&#xD;&#xA;" type="DBField" delimiter="|" length="-1" align="2" filler="">Наименование плательщика</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler="">ИНН плательщика</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Расчетный счет плательщика</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">БИК банка плательщика</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Наименование банка плательщика</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Корреспондентский счет банка плательщика</field>
+      <field header="" type="DBField" delimiter="|&#xD;&#xA;" length="-1" align="2" filler=" ">КПП плательщика</field>
+      <field header="ПОЛУЧАТЕЛЬ:&#xD;&#xA;" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Наименование получателя</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">ИНН получателя</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Расчетный счет получателя</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">БИК банка получателя</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Наименование банка получателя</field>
+      <field header="" type="DBField" delimiter="|" length="-1" align="2" filler=" ">Корреспондентский счет банка получателя</field>
+      <field header="" type="DBField" delimiter="|&#xD;&#xA;" length="-1" align="2" filler=" ">КПП получателя</field>
+      <field header="СРОК ПЛАТЕЖА:&#xD;&#xA;ОЧЕРЕДНОСТЬ ПЛАТЕЖА: 6&#xD;&#xA;ТИП ОТПРАВЛЕНИЯ: 0000000000000030&#xD;&#xA;НАЛОГОВЫЕ РЕКВИЗИТЫ:&#xD;&#xA;||||||||&#xD;&#xA;КОД НАЗНАЧЕНИЯ ПЛАТЕЖА:&#xD;&#xA;" type="ExtField" delimiter="" length="-1" align="1" filler=" ">Блок срока платежа</field>
+      <field header="НАЗНАЧЕНИЕ ПЛАТЕЖА:&#xD;&#xA;" type="DBField" delimiter="&#xD;&#xA;" length="-1" align="2" filler=" ">Основание</field>
+    </fields>
+    <decimalsplitter>.</decimalsplitter>
+    <dateformat>
+      <datesplitter>.</datesplitter>
+      <day position="1" form="long" />
+      <month position="2" form="digit2" />
+      <year position="3" form="short" />
+      <example>12.01.80</example>
+    </dateformat>
+  </settings>
+  <settings name="файл 1C">
+    <description>Файл, используемый для импорта п/п в системе 1С</description>
+    <codepage>cp866</codepage>
+    <fields splitter=" : ">
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Номер документа</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">КПП плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Дата документа</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Сумма</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Наименование плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">ИНН плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Расчетный счет плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">БИК банка плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Наименование банка плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Корреспондентский счет банка плательщика</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Наименование получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">ИНН получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">КПП получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Расчетный счет получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">БИК банка получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Наименование банка получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Корреспондентский счет банка получателя</field>
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" " xmlns="">Основание</field>
+      <field header="qwe" type="ExtField" delimiter="qwe" length="-1" align="2" filler="" xmlns="">qwe</field>
+    </fields>
+    <decimalsplitter>.</decimalsplitter>
+    <dateformat>
+      <datesplitter>/</datesplitter>
+      <day position="1" form="short">
+      </day>
+      <month position="2" form="letters1">
+      </month>
+      <year position="3" form="short">
+      </year>
+      <example>Jan/12/1980</example>
+    </dateformat>
+  </settings>
+  <settings name="asdasda" xmlns="">
+    <description>asd</description>
+    <codepage>win-1251</codepage>
+    <fields delimiter="">
+      <field header="" type="DBField" delimiter="" length="0" align="2" filler=" ">Номер документа</field>
+    </fields>
+    <decimalsplitter>.</decimalsplitter>
+    <dateformat>
+      <datesplitter>.</datesplitter>
+      <day position="1" form="short" />
+      <month position="2" form="letters2" />
+      <year position="3" form="long" />
+      <example />
+    </dateformat>
+  </settings>
+</settingscollection>

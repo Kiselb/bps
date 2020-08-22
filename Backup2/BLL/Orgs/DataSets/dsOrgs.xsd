@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsOrgs" targetNamespace="http://www.tempuri.org/dsOrgs.xsd" xmlns:mstns="http://www.tempuri.org/dsOrgs.xsd"
+	xmlns="http://www.tempuri.org/dsOrgs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsOrgs" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Orgs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="OrgName" type="xs:string" />
+							<xs:element name="OrgName2" type="xs:string" minOccurs="0" />
+							<xs:element name="IsNormal" type="xs:boolean" />
+							<xs:element name="IsInner" type="xs:boolean" />
+							<xs:element name="IsSpecial" type="xs:boolean" />
+							<xs:element name="DefaultServiceCharge" type="xs:double" nillable="true" />
+							<xs:element name="CodeINN" type="xs:string" />
+							<xs:element name="CodeKPP" type="xs:string" minOccurs="0" />
+							<xs:element name="AddrReg" type="xs:string" minOccurs="0" />
+							<xs:element name="AddrFact" type="xs:string" minOccurs="0" />
+							<xs:element name="Phone1" type="xs:string" minOccurs="0" />
+							<xs:element name="Phone2" type="xs:string" minOccurs="0" />
+							<xs:element name="Fax1" type="xs:string" minOccurs="0" />
+							<xs:element name="Fax2" type="xs:string" minOccurs="0" />
+							<xs:element name="ContactPerson" type="xs:string" minOccurs="0" />
+							<xs:element name="OKPO" type="xs:string" minOccurs="0" />
+							<xs:element name="OKONH" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientID" type="xs:int" minOccurs="0" nillable="true" />
+							<xs:element name="IsRemoved" type="xs:boolean" minOccurs="0" default="false" nillable="false" />
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" nillable="true" msdata:ReadOnly="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="OrgsSelectCommand_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Orgs" />
+			<xs:field xpath="mstns:OrgID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

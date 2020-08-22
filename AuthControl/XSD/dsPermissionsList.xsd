@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsPermissionsList" targetNamespace="http://www.tempuri.org/dsPermissionsList.xsd" xmlns:mstns="http://www.tempuri.org/dsPermissionsList.xsd" xmlns="http://www.tempuri.org/dsPermissionsList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsPermissionsList" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="PermissionsDescriptions">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PermissionID" msdata:ReadOnly="false" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="PermissionTypeID" type="xs:int" />
+							<xs:element name="ParentPermissionID" type="xs:int" minOccurs="0" />
+							<xs:element name="InternalName" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:PermissionsDescriptions" />
+			<xs:field xpath="mstns:PermissionID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

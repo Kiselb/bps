@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[AM_Lib.csproj]
+SCC_Aux_Path = "\\am-server2\VSS\"
+SCC_Project_Name = "$/BPS/AM_Lib", PYEAAAAA

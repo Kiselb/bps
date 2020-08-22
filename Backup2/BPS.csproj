@@ -1,0 +1,1361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>_Icons\BPSApp.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>BPS</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BPS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>D:\Projects\BPS 2016\bps\Backup\BPS\</UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AM_Controls">
+      <Name>AM_Controls</Name>
+      <HintPath>..\AM_cONTROLS\bin\Debug\AM_Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AM_Lib">
+      <Name>AM_Lib</Name>
+      <HintPath>..\AM_Lib\bin\Debug\AM_Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="AuthControl">
+      <Name>AuthControl</Name>
+      <HintPath>..\AuthControl\bin\Debug\AuthControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <Name>CrystalDecisions.CrystalReports.Engine</Name>
+      <HintPath>..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <Name>CrystalDecisions.ReportSource</Name>
+      <HintPath>..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <Name>CrystalDecisions.Shared</Name>
+      <HintPath>..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <Name>CrystalDecisions.Windows.Forms</Name>
+      <HintPath>..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <Name>System.Data.OracleClient</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>system.directoryservices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Security">
+      <Name>System.Security</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BLL\AccountStatemets\DataSets\dsAccountsStatementsList.cs">
+      <DependentUpon>dsAccountsStatementsList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\AccountStatemets\DataSets\dsAccStatementsList.cs">
+      <DependentUpon>dsAccStatementsList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.cs">
+      <DependentUpon>dsAccStatementsListDetails.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\AccountStatemets\DataSets\dsPaymList.cs">
+      <DependentUpon>dsPaymList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Accounts\DataSets\dsAllAccounts.cs">
+      <DependentUpon>dsAllAccounts.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Accounts\DataSets\dsBalanceAccountsState.cs">
+      <DependentUpon>dsBalanceAccountsState.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Accounts\DataSets\dsBankAccountsStates.cs">
+      <DependentUpon>dsBankAccountsStates.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Accounts\DataSets\dsClientsBalances.cs">
+      <DependentUpon>dsClientsBalances.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Accounts\DataSets\dsClientsGroupsBalances.cs">
+      <DependentUpon>dsClientsGroupsBalances.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Bank\coBanks.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Bank\DataSets\dsBanks.cs">
+      <DependentUpon>dsBanks.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\City\coCities.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\City\DataSets\dsCities.cs">
+      <DependentUpon>dsCities.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\ClientsRequests\coRequest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\ClientsRequests\DataSets\dsClientsRequests.cs">
+      <DependentUpon>dsClientsRequests.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\ClientsRequests\DataSets\dsPrevClientRequest.cs">
+      <DependentUpon>dsPrevClientRequest.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\ClientsRequests\DataSets\dsReqState.cs">
+      <DependentUpon>dsReqState.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\ClientsRequests\DataSets\dsReqTypes.cs">
+      <DependentUpon>dsReqTypes.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Clients\coClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Clients\coInterestRates.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Clients\DataSets\dsClients.cs">
+      <DependentUpon>dsClients.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Clients\DataSets\dsGroups.cs">
+      <DependentUpon>dsGroups.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Clients\DataSets\dsInterestRate.cs">
+      <DependentUpon>dsInterestRate.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Clients\DataSets\dsInterestRateList.cs">
+      <DependentUpon>dsInterestRateList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Clients\DataSets\dsOrgsClients.cs">
+      <DependentUpon>dsOrgsClients.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\coCreditsPoints.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCredits.cs">
+      <DependentUpon>dsCredits.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsDetails.cs">
+      <DependentUpon>dsCreditsDetails.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsListSummary.cs">
+      <DependentUpon>dsCreditsListSummary.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsOperations.cs">
+      <DependentUpon>dsCreditsOperations.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsPoints.cs">
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsPointsInfoList.cs">
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Credits\DataSets\dsCreditsSummary.cs">
+      <DependentUpon>dsCreditsSummary.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Currency\coCurrency.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Currency\DataSets\dsCurr.cs">
+      <DependentUpon>dsCurr.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Currency\DataSets\dsCurrHistory.cs">
+      <DependentUpon>dsCurrHistory.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\coOrgAccount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsOrgs.cs">
+      <DependentUpon>dsOrgs.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsOrgsAccount.cs">
+      <DependentUpon>dsOrgsAccount.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsOrgsAccountAccess.cs">
+      <DependentUpon>dsOrgsAccountAccess.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsOrgsAccounts.cs">
+      <DependentUpon>dsOrgsAccounts.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsUserOrgsAccounts.cs">
+      <DependentUpon>dsUserOrgsAccounts.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsUsers.cs">
+      <DependentUpon>dsUsers.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.cs">
+      <DependentUpon>dsUsersOrgsAndAccounts.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Orgs\UsersOrgsAndAccounts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\Orgs\сoOrgs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsOrgAccountsUList.cs">
+      <DependentUpon>dsOrgAccountsUList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsOrgsUList.cs">
+      <DependentUpon>dsOrgsUList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsPaymentOrderList.cs">
+      <DependentUpon>dsPaymentOrderList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsPaymentOrderListX.cs">
+      <DependentUpon>dsPaymentOrderListX.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.cs">
+      <DependentUpon>dsPaymentsOrdersLinkHistory.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.cs">
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\PaymentOrders\DataSets\dsRequestsNotLinked.cs">
+      <DependentUpon>dsRequestsNotLinked.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Transactions\DataSets\dsLastPurposeList.cs">
+      <DependentUpon>dsLastPurposeList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Transactions\DataSets\dsTransactionList.cs">
+      <DependentUpon>dsTransactionList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Transactions\DataSets\dsTransSumList.cs">
+      <DependentUpon>dsTransSumList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Transactions\DataSets\dsUListOrgs.cs">
+      <DependentUpon>dsUListOrgs.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="BLL\Transactions\DataSets\dsUListOrgsAccounts.cs">
+      <DependentUpon>dsUListOrgsAccounts.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_CS\App.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_CS\ConfigLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_CS\TransactionsOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="_Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\AccountStatements\AccountsStatementsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\AccountStatements\AccountStatementEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\AccountStatements\AccountStatementEditEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\AccountStatements\AccountStatementNewHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\AccountStatements\AccountStatementPaymentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Accounts\AccountStates_Banks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Accounts\AccountStates_Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Accounts\AccountStates_Our.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Accounts\AllAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Accounts\Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Banks\BanksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Banks\EditBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\City\Cities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\City\CityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ClientsRequests\CheckOrgTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ClientsRequests\ClientRequestEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ClientsRequests\ClientRequestsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Clients\AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Clients\AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Clients\ClientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Clients\GroupClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditChargePcnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditOnGrantEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditPayBack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditPointEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditsIncrease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditsPrintReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Credits\CreditsRedemption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Currency\CurrHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Currency\CurrList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Currency\EditCurr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Currency\SetCurrencyRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\dsCreditsOperationsGroups.cs">
+      <DependentUpon>dsCreditsOperationsGroups.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Forms\dsUnlinkedPaymList.cs">
+      <DependentUpon>dsUnlinkedPaymList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\FileFormatSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\FileFormatSettingsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\FileFormatSettingsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\FormatFieldPropsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\PaymentOrdersExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\ExpImp\PaymentOrdersImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Locks\dsLocksList.cs">
+      <DependentUpon>dsLocksList.xsd</DependentUpon>
+      <SubType>code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Forms\Locks\LocksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\MainMDIFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\AddSpecialClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\EditOrgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\OrgAccountAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\OrgAccountEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\OrgsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\SpecialLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Orgs\_Controls\OrgsAndAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\PaymentsOrdersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\PaymentsOrdersLinkHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\PaymentsOrdersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\PaymentsOrdersRegontion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\PaymentsOrdersUnknownList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\PaymentOrders\RequestLinkParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Transactions\AskDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Transactions\SelectPurpose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Transactions\TransactionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Forms\Transactions\TransactionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Reports\AccountsOperationsMovie.cs">
+      <DependentUpon>AccountsOperationsMovie.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\AccountsOperationsMovieOrg.cs">
+      <DependentUpon>AccountsOperationsMovieOrg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\AccountsStates.cs">
+      <DependentUpon>AccountsStates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\CreditOperations.cs">
+      <DependentUpon>CreditOperations.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\CreditPoints.cs">
+      <DependentUpon>CreditPoints.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\CreditsOperationsGroups.cs">
+      <DependentUpon>CreditsOperationsGroups.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\CreditsStates1.cs">
+      <DependentUpon>CreditsStates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\PaymentOrder.cs">
+      <DependentUpon>PaymentOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="_Reports\RepPreview.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Reports\SettlementAccountsOperationsMovie.cs">
+      <DependentUpon>SettlementAccountsOperationsMovie.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Content Include="App.ico" />
+    <Content Include="app.xsd" />
+    <Content Include="BLL\AccountStatemets\DataSets\dsAccountsStatementsList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAccountsStatementsList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\AccountStatemets\DataSets\dsAccStatementsList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAccStatementsList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAccStatementsListDetails.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\AccountStatemets\DataSets\dsPaymList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaymList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Accounts\DataSets\dsAllAccounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAllAccounts.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Accounts\DataSets\dsBalanceAccountsState.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBalanceAccountsState.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Accounts\DataSets\dsBankAccountsStates.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBankAccountsStates.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Accounts\DataSets\dsClientsBalances.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsClientsBalances.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Accounts\DataSets\dsClientsGroupsBalances.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsClientsGroupsBalances.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Bank\DataSets\dsBanks.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBanks.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\City\DataSets\dsCities.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCities.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\ClientsRequests\DataSets\dsClientsRequests.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsClientsRequests.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\ClientsRequests\DataSets\dsPrevClientRequest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrevClientRequest.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\ClientsRequests\DataSets\dsReqState.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReqState.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\ClientsRequests\DataSets\dsReqTypes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReqTypes.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Clients\DataSets\dsClients.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsClients.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Clients\DataSets\dsGroups.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGroups.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Clients\DataSets\dsInterestRate.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInterestRate.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Clients\DataSets\dsInterestRateList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInterestRateList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Clients\DataSets\dsOrgsClients.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgsClients.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCredits.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCredits.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsDetails.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsDetails.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsListSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsListSummary.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsOperations.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsOperations.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsPoints.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsPoints.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsPointsInfoList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsPointsInfoList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Credits\DataSets\dsCreditsSummary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsSummary.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Currency\DataSets\dsCurr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCurr.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Currency\DataSets\dsCurrHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCurrHistory.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsOrgs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgs.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsOrgsAccount.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgsAccount.cs</LastGenOutput>
+      <CustomToolNamespace>BPS</CustomToolNamespace>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsOrgsAccountAccess.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgsAccountAccess.cs</LastGenOutput>
+      <CustomToolNamespace>BPS</CustomToolNamespace>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsOrgsAccounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgsAccounts.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsUserOrgsAccounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserOrgsAccounts.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsUsers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUsers.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsOrgAccountsUList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgAccountsUList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsOrgsUList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrgsUList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsPaymentOrderList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaymentOrderList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsPaymentOrderListX.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaymentOrderListX.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaymentsOrdersLinkHistory.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaymentsOrdersUnknownList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\PaymentOrders\DataSets\dsRequestsNotLinked.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRequestsNotLinked.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Transactions\DataSets\dsLastPurposeList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLastPurposeList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Transactions\DataSets\dsTransactionList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransactionList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Transactions\DataSets\dsTransSumList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTransSumList.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Transactions\DataSets\dsUListOrgs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUListOrgs.cs</LastGenOutput>
+    </Content>
+    <Content Include="BLL\Transactions\DataSets\dsUListOrgsAccounts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUListOrgsAccounts.cs</LastGenOutput>
+    </Content>
+    <Content Include="POFormatSettings.xml" />
+    <Content Include="POFormatSettings.xsd" />
+    <Content Include="_Forms\dsCreditsOperationsGroups.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCreditsOperationsGroups.cs</LastGenOutput>
+    </Content>
+    <Content Include="_Forms\dsUnlinkedPaymList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnlinkedPaymList.cs</LastGenOutput>
+    </Content>
+    <Content Include="_Forms\Locks\dsLocksList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLocksList.cs</LastGenOutput>
+    </Content>
+    <Content Include="_Icons\ARW02DN.ICO" />
+    <Content Include="_Icons\ARW02UP.ICO" />
+    <Content Include="_Icons\Book.ico" />
+    <Content Include="_Icons\BOOK01B.ICO" />
+    <Content Include="_Icons\BPSApp.ico" />
+    <Content Include="_Icons\CHECKMRK.ICO" />
+    <Content Include="_Icons\ChkDoc.ico" />
+    <Content Include="_Icons\Clear.ico" />
+    <Content Include="_Icons\Copy.ico" />
+    <Content Include="_Icons\CREDINC.ico" />
+    <Content Include="_Icons\CREDOFF.ico" />
+    <Content Include="_Icons\CREDON.ico" />
+    <Content Include="_Icons\CREDOPX.ico" />
+    <Content Include="_Icons\CREDUNDO.ico" />
+    <Content Include="_Icons\DataBase.ico" />
+    <Content Include="_Icons\Dir.ico" />
+    <Content Include="_Icons\Doc.ico" />
+    <Content Include="_Icons\Doc1.ico" />
+    <Content Include="_Icons\DocDel.ico" />
+    <Content Include="_Icons\Edit.ico" />
+    <Content Include="_Icons\Exch.ico" />
+    <Content Include="_Icons\Exclam.ICO" />
+    <Content Include="_Icons\Exec.ico" />
+    <Content Include="_Icons\Exit.ICO" />
+    <Content Include="_Icons\FilterClear.ico" />
+    <Content Include="_Icons\FilterOff.ico" />
+    <Content Include="_Icons\FilterOff1.ico" />
+    <Content Include="_Icons\FilterOn.ico" />
+    <Content Include="_Icons\Find.ico" />
+    <Content Include="_Icons\FOLDER04.ICO" />
+    <Content Include="_Icons\FOLDER05.ICO" />
+    <Content Include="_Icons\Gear2.ico" />
+    <Content Include="_Icons\Gears.ico" />
+    <Content Include="_Icons\groupHDel1.ico" />
+    <Content Include="_Icons\HLP.ICO" />
+    <Content Include="_Icons\HLPDEL.ICO" />
+    <Content Include="_Icons\KEY06.ICO" />
+    <Content Include="_Icons\KEY2.BMP" />
+    <Content Include="_Icons\KEY3.BMP" />
+    <Content Include="_Icons\MISC27.ICO" />
+    <Content Include="_Icons\MISC28.ICO" />
+    <Content Include="_Icons\Money.ico" />
+    <Content Include="_Icons\MoneyBag.ico" />
+    <Content Include="_Icons\New1.ico" />
+    <Content Include="_Icons\NewDoc.ico" />
+    <Content Include="_Icons\Open.ico" />
+    <Content Include="_Icons\PcntMinus.ico" />
+    <Content Include="_Icons\PcntPlus.ico" />
+    <Content Include="_Icons\Prev.ico" />
+    <Content Include="_Icons\PrnTies.ico" />
+    <Content Include="_Icons\Refresh.ico" />
+    <Content Include="_Icons\Refresh2.ico" />
+    <Content Include="_Icons\Reps.ico" />
+    <Content Include="_Icons\SECUR03.ICO" />
+    <Content Include="_Icons\SECUR08.ICO" />
+    <Content Include="_Icons\TASKL.ICO" />
+    <Content Include="_Icons\TBL.ICO" />
+    <Content Include="_Icons\TBL2.ICO" />
+    <Content Include="_Icons\Undo.ico" />
+    <Content Include="_Icons\UnknownDoc.ICO" />
+    <Content Include="_Icons\User2.ico" />
+    <Content Include="_Icons\W95MBX03.ICO" />
+    <EmbeddedResource Include="BLL\Bank\coBanks.resx">
+      <DependentUpon>coBanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\City\coCities.resx">
+      <DependentUpon>coCities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\ClientsRequests\coRequest.resx">
+      <DependentUpon>coRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Clients\coClientEx.resx">
+      <DependentUpon>coClientEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Clients\coInterestRates.resx">
+      <DependentUpon>coInterestRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Credits\coCreditsPoints.resx">
+      <DependentUpon>coCreditsPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Currency\coCurrency.resx">
+      <DependentUpon>coCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Orgs\coOrgAccount.resx">
+      <DependentUpon>coOrgAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Orgs\UsersOrgsAndAccounts.resx">
+      <DependentUpon>UsersOrgsAndAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\Orgs\сoOrgs.resx">
+      <DependentUpon>сoOrgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\AccountStatements\AccountsStatementsList.resx">
+      <DependentUpon>AccountsStatementsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\AccountStatements\AccountStatementEdit.resx">
+      <DependentUpon>AccountStatementEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\AccountStatements\AccountStatementEditEx.resx">
+      <DependentUpon>AccountStatementEditEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\AccountStatements\AccountStatementNewHeader.resx">
+      <DependentUpon>AccountStatementNewHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\AccountStatements\AccountStatementPaymentEdit.resx">
+      <DependentUpon>AccountStatementPaymentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Accounts\AccountStates_Banks.resx">
+      <DependentUpon>AccountStates_Banks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Accounts\AccountStates_Clients.resx">
+      <DependentUpon>AccountStates_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Accounts\AccountStates_Our.resx">
+      <DependentUpon>AccountStates_Our.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Accounts\AllAccounts.resx">
+      <DependentUpon>AllAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Accounts\Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Banks\BanksList.resx">
+      <DependentUpon>BanksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Banks\EditBank.resx">
+      <DependentUpon>EditBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\City\Cities.resx">
+      <DependentUpon>Cities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\City\CityEdit.resx">
+      <DependentUpon>CityEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ClientsRequests\CheckOrgTo.resx">
+      <DependentUpon>CheckOrgTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ClientsRequests\ClientRequestEdit.resx">
+      <DependentUpon>ClientRequestEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ClientsRequests\ClientRequestsList.resx">
+      <DependentUpon>ClientRequestsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Clients\AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Clients\AddGroup.resx">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Clients\ClientView.resx">
+      <DependentUpon>ClientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Clients\GroupClients.resx">
+      <DependentUpon>GroupClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditChargePcnt.resx">
+      <DependentUpon>CreditChargePcnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditOnGrantEdit.resx">
+      <DependentUpon>CreditOnGrantEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditPayBack.resx">
+      <DependentUpon>CreditPayBack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditPointEdit.resx">
+      <DependentUpon>CreditPointEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditsEdit.resx">
+      <DependentUpon>CreditsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditsIncrease.resx">
+      <DependentUpon>CreditsIncrease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditsPrintReports.resx">
+      <DependentUpon>CreditsPrintReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Credits\CreditsRedemption.resx">
+      <DependentUpon>CreditsRedemption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Currency\CurrHistory.resx">
+      <DependentUpon>CurrHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Currency\CurrList.resx">
+      <DependentUpon>CurrList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Currency\EditCurr.resx">
+      <DependentUpon>EditCurr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Currency\SetCurrencyRate.resx">
+      <DependentUpon>SetCurrencyRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\FileFormatSettings.resx">
+      <DependentUpon>FileFormatSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\FileFormatSettingsEdit.resx">
+      <DependentUpon>FileFormatSettingsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\FileFormatSettingsList.resx">
+      <DependentUpon>FileFormatSettingsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\FormatFieldPropsEdit.resx">
+      <DependentUpon>FormatFieldPropsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\PaymentOrdersExport.resx">
+      <DependentUpon>PaymentOrdersExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\ExpImp\PaymentOrdersImport.resx">
+      <DependentUpon>PaymentOrdersImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Locks\LocksView.resx">
+      <DependentUpon>LocksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\MainMDIFrame.resx">
+      <DependentUpon>MainMDIFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\AddSpecialClients.resx">
+      <DependentUpon>AddSpecialClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\EditOrgs.resx">
+      <DependentUpon>EditOrgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\OrgAccountAccess.resx">
+      <DependentUpon>OrgAccountAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\OrgAccountEdit.resx">
+      <DependentUpon>OrgAccountEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\OrgsList.resx">
+      <DependentUpon>OrgsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\SpecialLink.resx">
+      <DependentUpon>SpecialLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Orgs\_Controls\OrgsAndAccounts.resx">
+      <DependentUpon>OrgsAndAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\PaymentsOrdersEdit.resx">
+      <DependentUpon>PaymentsOrdersEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\PaymentsOrdersLinkHistory.resx">
+      <DependentUpon>PaymentsOrdersLinkHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\PaymentsOrdersList.resx">
+      <DependentUpon>PaymentsOrdersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\PaymentsOrdersRegontion.resx">
+      <DependentUpon>PaymentsOrdersRegontion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\PaymentsOrdersUnknownList.resx">
+      <DependentUpon>PaymentsOrdersUnknownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\PaymentOrders\RequestLinkParams.resx">
+      <DependentUpon>RequestLinkParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Transactions\AskDate.resx">
+      <DependentUpon>AskDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Transactions\SelectPurpose.resx">
+      <DependentUpon>SelectPurpose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Transactions\TransactionEdit.resx">
+      <DependentUpon>TransactionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Forms\Transactions\TransactionsList.resx">
+      <DependentUpon>TransactionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\AccountsOperationsMovie.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountsOperationsMovie.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\AccountsOperationsMovieOrg.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountsOperationsMovieOrg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\AccountsStates.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AccountsStates.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\CreditOperations.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditOperations.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\CreditPoints.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditPoints.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\CreditsOperationsGroups.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditsOperationsGroups.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\CreditsStates.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CreditsStates1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\PaymentOrder.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PaymentOrder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\RepPreview.resx">
+      <DependentUpon>RepPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Reports\SettlementAccountsOperationsMovie.rpt">
+      <Generator>CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SettlementAccountsOperationsMovie.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.xsx">
+      <DependentUpon>app.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\AccountStatemets\DataSets\dsAccountsStatementsList.xsx">
+      <DependentUpon>dsAccountsStatementsList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\AccountStatemets\DataSets\dsAccStatementsList.xsx">
+      <DependentUpon>dsAccStatementsList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.xsx">
+      <DependentUpon>dsAccStatementsListDetails.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Accounts\DataSets\dsAllAccounts.xsx">
+      <DependentUpon>dsAllAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Accounts\DataSets\dsBankAccountsStates.xsx">
+      <DependentUpon>dsBankAccountsStates.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Accounts\DataSets\dsClientsBalances.xsx">
+      <DependentUpon>dsClientsBalances.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Bank\DataSets\dsBanks.xsx">
+      <DependentUpon>dsBanks.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\ClientsRequests\DataSets\dsClientsRequests.xsx">
+      <DependentUpon>dsClientsRequests.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\ClientsRequests\DataSets\dsPrevClientRequest.xsx">
+      <DependentUpon>dsPrevClientRequest.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\ClientsRequests\DataSets\dsReqState.xsx">
+      <DependentUpon>dsReqState.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\ClientsRequests\DataSets\dsReqTypes.xsx">
+      <DependentUpon>dsReqTypes.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Clients\DataSets\dsClients.xsx">
+      <DependentUpon>dsClients.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Clients\DataSets\dsGroups.xsx">
+      <DependentUpon>dsGroups.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Clients\DataSets\dsInterestRate.xsx">
+      <DependentUpon>dsInterestRate.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Clients\DataSets\dsOrgsClients.xsx">
+      <DependentUpon>dsOrgsClients.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCredits.xsx">
+      <DependentUpon>dsCredits.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCreditsDetails.xsx">
+      <DependentUpon>dsCreditsDetails.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCreditsOperations.xsx">
+      <DependentUpon>dsCreditsOperations.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCreditsPoints.xsx">
+      <DependentUpon>dsCreditsPoints.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCreditsPointsInfoList.xsx">
+      <DependentUpon>dsCreditsPointsInfoList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Credits\DataSets\dsCreditsSummary.xsx">
+      <DependentUpon>dsCreditsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Currency\DataSets\dsCurr.xsx">
+      <DependentUpon>dsCurr.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Currency\DataSets\dsCurrHistory.xsx">
+      <DependentUpon>dsCurrHistory.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsOrgs.xsx">
+      <DependentUpon>dsOrgs.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsOrgsAccount.xsx">
+      <DependentUpon>dsOrgsAccount.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsOrgsAccountAccess.xsx">
+      <DependentUpon>dsOrgsAccountAccess.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsOrgsAccounts.xsx">
+      <DependentUpon>dsOrgsAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsUserOrgsAccounts.xsx">
+      <DependentUpon>dsUserOrgsAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.xsx">
+      <DependentUpon>dsUsersOrgsAndAccounts.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\PaymentOrders\DataSets\dsOrgsUList.xsx">
+      <DependentUpon>dsOrgsUList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\PaymentOrders\DataSets\dsPaymentOrderList.xsx">
+      <DependentUpon>dsPaymentOrderList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\PaymentOrders\DataSets\dsPaymentOrderListX.xsx">
+      <DependentUpon>dsPaymentOrderListX.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.xsx">
+      <DependentUpon>dsPaymentsOrdersLinkHistory.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.xsx">
+      <DependentUpon>dsPaymentsOrdersUnknownList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Transactions\DataSets\dsTransactionList.xsx">
+      <DependentUpon>dsTransactionList.xsd</DependentUpon>
+    </None>
+    <None Include="BLL\Transactions\DataSets\dsTransSumList.xsx">
+      <DependentUpon>dsTransSumList.xsd</DependentUpon>
+    </None>
+    <None Include="POFormatSettings.xsx">
+      <DependentUpon>POFormatSettings.xsd</DependentUpon>
+    </None>
+    <None Include="_Forms\dsCreditsOperationsGroups.xsx">
+      <DependentUpon>dsCreditsOperationsGroups.xsd</DependentUpon>
+    </None>
+    <None Include="_Forms\dsUnlinkedPaymList.xsx">
+      <DependentUpon>dsUnlinkedPaymList.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsCreditsOperations" targetNamespace="http://www.tempuri.org/dsCreditsOperations.xsd" xmlns:mstns="http://www.tempuri.org/dsCreditsOperations.xsd" xmlns="http://www.tempuri.org/dsCreditsOperations.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsCreditsOperations" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CreditsOperations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CreditID" type="xs:int" />
+              <xs:element name="OperationDate" type="xs:dateTime" />
+              <xs:element name="TransactionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+              <xs:element name="TransactionTypeID" type="xs:int" minOccurs="0" />
+              <xs:element name="TransactionCommited" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TransactionPosted" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ClientID" type="xs:int" minOccurs="0" />
+              <xs:element name="SumFrom" type="xs:double" minOccurs="0" />
+              <xs:element name="SumTo" type="xs:double" minOccurs="0" />
+              <xs:element name="CurrencyRate" type="xs:double" minOccurs="0" />
+              <xs:element name="AccountIDFrom" type="xs:int" minOccurs="0" />
+              <xs:element name="AccountIDTo" type="xs:int" minOccurs="0" />
+              <xs:element name="ServiceCharge" type="xs:double" minOccurs="0" />
+              <xs:element name="DocumentID" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PostedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CommitedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TransactionIDParent" type="xs:int" minOccurs="0" />
+              <xs:element name="ClientRequestID" type="xs:int" minOccurs="0" />
+              <xs:element name="Purpose" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="TransactionTypeName" type="xs:string" minOccurs="0" />
+              <xs:element name="CreditSumCurrency" type="xs:string" />
+              <xs:element name="GroupID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

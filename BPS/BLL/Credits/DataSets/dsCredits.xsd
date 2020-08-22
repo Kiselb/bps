@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsCredits" targetNamespace="http://www.tempuri.org/dsCredits.xsd" xmlns:mstns="http://www.tempuri.org/dsCredits.xsd"
+	xmlns="http://www.tempuri.org/dsCredits.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsCredits" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Credits">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientGroupID" type="xs:int" minOccurs="0" />
+							<xs:element name="CreditStatusName" type="xs:string" minOccurs="0" />
+							<xs:element name="CreditID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CreditStatusID" type="xs:int" />
+							<xs:element name="ClientID" type="xs:int" />
+							<xs:element name="IsGranted" type="xs:boolean" />
+							<xs:element name="StartDate" type="xs:dateTime" />
+							<xs:element name="EndDate" type="xs:dateTime" />
+							<xs:element name="CreditSum" type="xs:double" />
+							<xs:element name="ServiceCharge" type="xs:double" />
+							<xs:element name="ServiceChargeExtra" type="xs:double" />
+							<xs:element name="Remarks" type="xs:string" minOccurs="0" />
+							<xs:element name="GrantedText" type="xs:string" minOccurs="0" msdata:Expression="iif(IsGranted=1,'Выдача','Получение')" />
+							<xs:element name="CreditSumCurrency" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientGroupName" type="xs:string" minOccurs="0" />
+							<xs:element name="IsExtended" type="xs:boolean" minOccurs="0" nillable="false" default="false" />
+							<xs:element name="IsShortTerm" type="xs:boolean" minOccurs="0" nillable="false" default="false" />
+							<xs:element name="CreditType" type="xs:string" minOccurs="0" msdata:Expression="iif(IsExtended = 1, 'С планом погашения', iif(IsShortTerm = 1, 'Краткосрочный', 'Долгосрочный'))" />
+							<xs:element name="PercentageRoundMode" type="xs:boolean"></xs:element>
+							<xs:element name="PercentageSinkMode" type="xs:boolean"></xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsCurr" targetNamespace="http://www.tempuri.org/dsCurr.xsd" xmlns:mstns="http://www.tempuri.org/dsCurr.xsd" xmlns="http://www.tempuri.org/dsCurr.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsCurr" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Currencies">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CurrencyID" type="xs:string" />
+							<xs:element name="CurrencyName" type="xs:string" />
+							<xs:element name="CurrencyRate" type="xs:double" />
+							<xs:element name="IsBase" type="xs:boolean" minOccurs="0" default="false" nillable="false" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Currencies" />
+			<xs:field xpath="mstns:CurrencyID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

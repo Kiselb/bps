@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsAccStatementsList" targetNamespace="http://www.tempuri.org/dsAccStatementsList.xsd" xmlns:mstns="http://www.tempuri.org/dsAccStatementsList.xsd" xmlns="http://www.tempuri.org/dsAccStatementsList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsAccStatementsList" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AccountsStatementsHeaders">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="OrgsAccountsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="HeaderID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="HeaderDate" type="xs:dateTime" />
+							<xs:element name="Confirmed" type="xs:boolean" />
+							<xs:element name="OrgName" type="xs:string" />
+							<xs:element name="BankName" type="xs:string" />
+							<xs:element name="RAccount" type="xs:string" />
+							<xs:element name="KAccount" type="xs:string" />
+							<xs:element name="BankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:AccountsStatementsHeaders" />
+			<xs:field xpath="mstns:OrgsAccountsID" />
+			<xs:field xpath="mstns:HeaderID" />
+			<xs:field xpath="mstns:BankID" />
+			<xs:field xpath="mstns:OrgID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

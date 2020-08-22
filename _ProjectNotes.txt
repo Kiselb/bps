@@ -1,0 +1,32 @@
+﻿В БД должны быть предварительно созданы:
+	в ClientsGroups
+		группа, помеченная IsInner(для специального Client - Контора)
+		группа, помеченная IsSpecial (для клиентов, соотвествующих Развивающим организациям(помеченным как IsSpecial))
+	в Clients
+		Клиент, помеченный IsInner.
+		
+		
+		
+		
+bcp bp2..AccountTypes out c:\bps_DATA\AccountTypes -S B1-3-Test -T -n
+bcp bp2..ClientsRequestTypes out c:\bps_DATA\ClientsRequestTypes -S B1-3-Test -T -n
+bcp bp2..ClientsRequestStates out c:\bps_DATA\ClientsRequestStates -S B1-3-Test -T -n
+bcp bp2..TransactionsTypes out c:\bps_DATA\TransactionsTypes -S B1-3-Test -T -n
+bcp bp2..PaymentOrderStates out c:\bps_DATA\PaymentOrderStates -S B1-3-Test -T -n
+bcp bp2..Currencies out c:\bps_DATA\Currencies -S B1-3-Test -T -n
+bcp bp2..CurrenciesHistory out c:\bps_DATA\CurrenciesHistory -S B1-3-Test -T -n
+bcp bp2..Cities out c:\bps_DATA\Cities -S B1-3-Test -T -n
+bcp bp2..ClientsGroups out c:\bps_DATA\ClientsGroups -S B1-3-Test -T -n
+bcp bp2..Clients out c:\bps_DATA\Clients -S B1-3-Test -T -n
+bcp bp2..Banks out c:\bps_DATA\Banks -S B1-3-Test -T -n
+bcp bp2..ClientsRequests out c:\bps_DATA\ClientsRequests -S B1-3-Test -T -n
+bcp bp2..Orgs out c:\bps_DATA\Orgs -S B1-3-Test -T -n
+bcp bp2..Accounts out c:\bps_DATA\Accounts -S B1-3-Test -T -n
+bcp bp2..OrgsClients out c:\bps_DATA\OrgsClients -S B1-3-Test -T -n
+bcp bp2..OrgsAccounts out c:\bps_DATA\OrgsAccounts -S B1-3-Test -T -n
+bcp bp2..AccountsOperations out c:\bps_DATA\AccountsOperations -S B1-3-Test -T -n
+bcp bp2..AccountsSatementsHeaders out c:\bps_DATA\AccountsSatementsHeaders -S B1-3-Test -T -n
+bcp bp2..AccountsSatements out c:\bps_DATA\AccountsSatements -S B1-3-Test -T -n
+bcp bp2..PaymentsOrders out c:\bps_DATA\PaymentsOrders -S B1-3-Test -T -n
+bcp bp2..Transactions out c:\bps_DATA\Transactions -S B1-3-Test -T -n
+bcp bp2..InterestRates out c:\bps_DATA\InterestRates -S B1-3-Test -T -n

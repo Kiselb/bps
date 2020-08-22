@@ -1,0 +1,375 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{62A1CEB5-02F2-4F5A-88FB-3AAF690317E8}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "AuthControl"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "AuthControl"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.Security"
+                    AssemblyName = "System.Security"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Security.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "AM_Controls"
+                    Project = "{5626E254-4C0E-466A-AA6A-7CFA436C99E5}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AddUser.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AddUser.resx"
+                    DependentUpon = "AddUser.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AddUserGroup.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AddUserGroup.resx"
+                    DependentUpon = "AddUserGroup.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AuthComp.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "AuthComp.resx"
+                    DependentUpon = "AuthComp.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dsUserInfo.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUserInfo.cs"
+                />
+                <File
+                    RelPath = "dsUserInfo.cs"
+                    DependentUpon = "dsUserInfo.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "dsUserInfo.xsx"
+                    DependentUpon = "dsUserInfo.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Logon.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Logon.resx"
+                    DependentUpon = "Logon.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PermissionsEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PermissionsEdit.resx"
+                    DependentUpon = "PermissionsEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "PermissionsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "PermissionsList.resx"
+                    DependentUpon = "PermissionsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Users.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Users.resx"
+                    DependentUpon = "Users.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Icons\Book.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Doc.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\DocDel.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FOLDER01.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FOLDER02.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FOLDER04.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\groupH.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\groupHDel1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\HLP.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\HLPDEL.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\LIGHTOFF.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\LIGHTON.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\MSGBOX01.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\New1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Refresh2.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\SECUR03.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\SECUR08.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "XSD\dsGroupsPermissions.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsGroupsPermissions.cs"
+                />
+                <File
+                    RelPath = "XSD\dsGroupsPermissions.cs"
+                    DependentUpon = "dsGroupsPermissions.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "XSD\dsGroupsPermissions.xsx"
+                    DependentUpon = "dsGroupsPermissions.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "XSD\dsPermissionsList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPermissionsList.cs"
+                />
+                <File
+                    RelPath = "XSD\dsPermissionsList.cs"
+                    DependentUpon = "dsPermissionsList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "XSD\dsPermissionsList.xsx"
+                    DependentUpon = "dsPermissionsList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "XSD\dsUserGroups.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUserGroups.cs"
+                />
+                <File
+                    RelPath = "XSD\dsUserGroups.cs"
+                    DependentUpon = "dsUserGroups.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "XSD\dsUserGroups.xsx"
+                    DependentUpon = "dsUserGroups.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "XSD\dsUsers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUsers.cs"
+                />
+                <File
+                    RelPath = "XSD\dsUsers.cs"
+                    DependentUpon = "dsUsers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "XSD\dsUsers.xsx"
+                    DependentUpon = "dsUsers.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "XSD\dsUsersPermissions.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUsersPermissions.cs"
+                />
+                <File
+                    RelPath = "XSD\dsUsersPermissions.cs"
+                    DependentUpon = "dsUsersPermissions.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "XSD\dsUsersPermissions.xsx"
+                    DependentUpon = "dsUsersPermissions.xsd"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

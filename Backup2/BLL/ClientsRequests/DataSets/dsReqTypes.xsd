@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsReqTypes" targetNamespace="http://www.tempuri.org/dsReqTypes.xsd" xmlns:mstns="http://www.tempuri.org/dsReqTypes.xsd" xmlns="http://www.tempuri.org/dsReqTypes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsReqTypes" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ClientsRequestTypes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RequestTypeID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="RequestTypeName" type="xs:string" />
+              <xs:element name="IsInner" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ClientsRequestTypes" />
+      <xs:field xpath="mstns:RequestTypeID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

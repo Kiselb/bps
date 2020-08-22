@@ -1,0 +1,7 @@
+D:\Projects\BPS 2016\bps\AM_Lib\obj\Debug\AM_Lib.Lock.resources
+D:\Projects\BPS 2016\bps\AM_Lib\obj\Debug\AM_Lib.csproj.GenerateResource.Cache
+D:\Projects\BPS 2016\bps\AM_Lib\obj\Debug\AM_Lib.dll
+D:\Projects\BPS 2016\bps\AM_Lib\obj\Debug\AM_Lib.pdb
+D:\Projects\BPS 2016\bps\AM_Lib\bin\Debug\AM_Lib.dll
+D:\Projects\BPS 2016\bps\AM_Lib\bin\Debug\AM_Lib.pdb
+D:\Projects\BPS 2016\bps\AM_Lib\obj\Debug\AM_Lib.csprojResolveAssemblyReference.cache

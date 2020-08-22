@@ -1,0 +1,67 @@
+<?xml version="1.0" ?>
+<xs:schema id="settingscollection" targetNamespace="http://tempuri.org/POFormatSettings.xsd" xmlns:mstns="http://tempuri.org/POFormatSettings.xsd" xmlns="http://tempuri.org/POFormatSettings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="settingscollection" msdata:IsDataSet="true" msdata:Locale="ru-RU" msdata:EnforceConstraints="False">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="settings">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="description" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+							<xs:element name="codepage" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+							<xs:element name="decimalsplitter" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+							<xs:element name="fields" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="field" minOccurs="0" maxOccurs="unbounded" nillable="true">
+											<xs:complexType>
+												<xs:simpleContent msdata:ColumnName="field_Text" msdata:Ordinal="5">
+													<xs:extension base="xs:string">
+														<xs:attribute name="header" form="unqualified" type="xs:string" />
+														<xs:attribute name="type" form="unqualified" type="xs:string" />
+														<xs:attribute name="delimiter" form="unqualified" type="xs:string" />
+														<xs:attribute name="length" form="unqualified" type="xs:string" />
+														<xs:attribute name="align" form="unqualified" type="xs:string" default="2" />
+														<xs:attribute name="filler" type="xs:string" />
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="delimiter" form="unqualified" type="xs:string" />
+									<xs:attribute name="splitter" form="unqualified" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dateformat" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="datesplitter" type="xs:string" minOccurs="0" />
+										<xs:element name="example" type="xs:string" minOccurs="0" />
+										<xs:element name="day" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="position" form="unqualified" type="xs:string" />
+												<xs:attribute name="form" type="xs:string" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="month" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="position" form="unqualified" type="xs:string" />
+												<xs:attribute name="form" form="unqualified" type="xs:string" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="year" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="position" form="unqualified" type="xs:string" />
+												<xs:attribute name="form" form="unqualified" type="xs:string" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" form="unqualified" type="xs:string" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,2198 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{2F42EAB5-8AD6-4DEB-9404-356B8D50C9E3}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "_Icons\BPSApp.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "BPS"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "BPS"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Security"
+                    AssemblyName = "System.Security"
+                    HintPath = "..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Security.dll"
+                />
+                <Reference
+                    Name = "system.directoryservices"
+                    AssemblyName = "System.DirectoryServices"
+                    HintPath = "..\..\winnt\microsoft.net\framework\v1.0.3705\system.directoryservices.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.CrystalReports.Engine.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.ReportSource.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.Shared.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "..\..\Program Files\Common Files\Crystal Decisions\1.0\Managed\CrystalDecisions.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.Data.OracleClient"
+                    AssemblyName = "System.Data.OracleClient"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.OracleClient.dll"
+                />
+                <Reference
+                    Name = "System.EnterpriseServices"
+                    AssemblyName = "System.EnterpriseServices"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.EnterpriseServices.dll"
+                />
+                <Reference
+                    Name = "AM_Controls"
+                    AssemblyName = "AM_Controls"
+                    HintPath = "..\AM_cONTROLS\bin\Debug\AM_Controls.dll"
+                />
+                <Reference
+                    Name = "AM_Lib"
+                    AssemblyName = "AM_Lib"
+                    HintPath = "..\AM_Lib\bin\Debug\AM_Lib.dll"
+                />
+                <Reference
+                    Name = "AuthControl"
+                    AssemblyName = "AuthControl"
+                    HintPath = "..\AuthControl\bin\Debug\AuthControl.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "app.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "app.xsx"
+                    DependentUpon = "app.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "POFormatSettings.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "POFormatSettings.xsd"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "POFormatSettings.xsx"
+                    DependentUpon = "POFormatSettings.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "_CS\App.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_CS\ConfigLoader.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_CS\TransactionsOperations.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\About.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\About.resx"
+                    DependentUpon = "About.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\dsCreditsOperationsGroups.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsOperationsGroups.cs"
+                />
+                <File
+                    RelPath = "_Forms\dsCreditsOperationsGroups.cs"
+                    DependentUpon = "dsCreditsOperationsGroups.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Forms\dsCreditsOperationsGroups.xsx"
+                    DependentUpon = "dsCreditsOperationsGroups.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "_Forms\dsUnlinkedPaymList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUnlinkedPaymList.cs"
+                />
+                <File
+                    RelPath = "_Forms\dsUnlinkedPaymList.cs"
+                    DependentUpon = "dsUnlinkedPaymList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Forms\dsUnlinkedPaymList.xsx"
+                    DependentUpon = "dsUnlinkedPaymList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "_Forms\MainMDIFrame.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\MainMDIFrame.resx"
+                    DependentUpon = "MainMDIFrame.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Banks.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Banks.resx"
+                    DependentUpon = "AccountStates_Banks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Clients.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Clients.resx"
+                    DependentUpon = "AccountStates_Clients.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Our.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AccountStates_Our.resx"
+                    DependentUpon = "AccountStates_Our.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AllAccounts.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\AllAccounts.resx"
+                    DependentUpon = "AllAccounts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\Balance.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Accounts\Balance.resx"
+                    DependentUpon = "Balance.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountsStatementsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountsStatementsList.resx"
+                    DependentUpon = "AccountsStatementsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementEdit.resx"
+                    DependentUpon = "AccountStatementEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementEditEx.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementEditEx.resx"
+                    DependentUpon = "AccountStatementEditEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementNewHeader.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementNewHeader.resx"
+                    DependentUpon = "AccountStatementNewHeader.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementPaymentEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\AccountStatements\AccountStatementPaymentEdit.resx"
+                    DependentUpon = "AccountStatementPaymentEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Banks\BanksList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Banks\BanksList.resx"
+                    DependentUpon = "BanksList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Banks\EditBank.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Banks\EditBank.resx"
+                    DependentUpon = "EditBank.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\City\Cities.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\City\Cities.resx"
+                    DependentUpon = "Cities.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\City\CityEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\City\CityEdit.resx"
+                    DependentUpon = "CityEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Clients\AddClient.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Clients\AddClient.resx"
+                    DependentUpon = "AddClient.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Clients\AddGroup.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Clients\AddGroup.resx"
+                    DependentUpon = "AddGroup.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Clients\ClientView.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Clients\ClientView.resx"
+                    DependentUpon = "ClientView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Clients\GroupClients.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Clients\GroupClients.resx"
+                    DependentUpon = "GroupClients.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\CheckOrgTo.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\CheckOrgTo.resx"
+                    DependentUpon = "CheckOrgTo.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\ClientRequestEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\ClientRequestEdit.resx"
+                    DependentUpon = "ClientRequestEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\ClientRequestsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ClientsRequests\ClientRequestsList.resx"
+                    DependentUpon = "ClientRequestsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditChargePcnt.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditChargePcnt.resx"
+                    DependentUpon = "CreditChargePcnt.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditOnGrantEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditOnGrantEdit.resx"
+                    DependentUpon = "CreditOnGrantEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditPayBack.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditPayBack.resx"
+                    DependentUpon = "CreditPayBack.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditPointEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditPointEdit.resx"
+                    DependentUpon = "CreditPointEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\Credits.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\Credits.resx"
+                    DependentUpon = "Credits.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsEdit.resx"
+                    DependentUpon = "CreditsEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsIncrease.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsIncrease.resx"
+                    DependentUpon = "CreditsIncrease.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsPrintReports.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsPrintReports.resx"
+                    DependentUpon = "CreditsPrintReports.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsRedemption.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Credits\CreditsRedemption.resx"
+                    DependentUpon = "CreditsRedemption.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Currency\CurrHistory.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Currency\CurrHistory.resx"
+                    DependentUpon = "CurrHistory.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Currency\CurrList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Currency\CurrList.resx"
+                    DependentUpon = "CurrList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Currency\EditCurr.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Currency\EditCurr.resx"
+                    DependentUpon = "EditCurr.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Currency\SetCurrencyRate.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Currency\SetCurrencyRate.resx"
+                    DependentUpon = "SetCurrencyRate.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettings.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettings.resx"
+                    DependentUpon = "FileFormatSettings.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettingsEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettingsEdit.resx"
+                    DependentUpon = "FileFormatSettingsEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettingsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FileFormatSettingsList.resx"
+                    DependentUpon = "FileFormatSettingsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FormatFieldPropsEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\FormatFieldPropsEdit.resx"
+                    DependentUpon = "FormatFieldPropsEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\PaymentOrdersExport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\PaymentOrdersExport.resx"
+                    DependentUpon = "PaymentOrdersExport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\PaymentOrdersImport.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\ExpImp\PaymentOrdersImport.resx"
+                    DependentUpon = "PaymentOrdersImport.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Locks\dsLocksList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsLocksList.cs"
+                />
+                <File
+                    RelPath = "_Forms\Locks\dsLocksList.cs"
+                    DependentUpon = "dsLocksList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Forms\Locks\LocksView.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Locks\LocksView.resx"
+                    DependentUpon = "LocksView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\AddSpecialClients.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\AddSpecialClients.resx"
+                    DependentUpon = "AddSpecialClients.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\EditOrgs.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\EditOrgs.resx"
+                    DependentUpon = "EditOrgs.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgAccountAccess.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgAccountAccess.resx"
+                    DependentUpon = "OrgAccountAccess.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgAccountEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgAccountEdit.resx"
+                    DependentUpon = "OrgAccountEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\OrgsList.resx"
+                    DependentUpon = "OrgsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\SpecialLink.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\SpecialLink.resx"
+                    DependentUpon = "SpecialLink.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\_Controls\OrgsAndAccounts.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Orgs\_Controls\OrgsAndAccounts.resx"
+                    DependentUpon = "OrgsAndAccounts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersEdit.resx"
+                    DependentUpon = "PaymentsOrdersEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersLinkHistory.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersLinkHistory.resx"
+                    DependentUpon = "PaymentsOrdersLinkHistory.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersList.resx"
+                    DependentUpon = "PaymentsOrdersList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersRegontion.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersRegontion.resx"
+                    DependentUpon = "PaymentsOrdersRegontion.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersUnknownList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\PaymentsOrdersUnknownList.resx"
+                    DependentUpon = "PaymentsOrdersUnknownList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\RequestLinkParams.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\PaymentOrders\RequestLinkParams.resx"
+                    DependentUpon = "RequestLinkParams.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\AskDate.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\AskDate.resx"
+                    DependentUpon = "AskDate.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\SelectPurpose.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\SelectPurpose.resx"
+                    DependentUpon = "SelectPurpose.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\TransactionEdit.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\TransactionEdit.resx"
+                    DependentUpon = "TransactionEdit.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\TransactionsList.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Forms\Transactions\TransactionsList.resx"
+                    DependentUpon = "TransactionsList.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Icons\ARW02DN.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\ARW02UP.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Book.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\BOOK01B.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\BPSApp.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CHECKMRK.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\ChkDoc.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Clear.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Copy.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CREDINC.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CREDOFF.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CREDON.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CREDOPX.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\CREDUNDO.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\DataBase.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Dir.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Doc.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Doc1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\DocDel.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Edit.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Exch.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Exclam.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Exec.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Exit.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FilterClear.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FilterOff.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FilterOff1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FilterOn.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Find.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FOLDER04.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\FOLDER05.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Gear2.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Gears.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\groupHDel1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\HLP.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\HLPDEL.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\KEY06.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\KEY2.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\KEY3.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\MISC27.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\MISC28.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Money.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\MoneyBag.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\New1.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\NewDoc.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Open.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\PcntMinus.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\PcntPlus.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Prev.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\PrnTies.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Refresh.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Refresh2.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Reps.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\SECUR03.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\SECUR08.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\TASKL.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\TBL.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\TBL2.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\Undo.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\UnknownDoc.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\User2.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Icons\W95MBX03.ICO"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_Reports\AccountsOperationsMovie.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "AccountsOperationsMovie.cs"
+                />
+                <File
+                    RelPath = "_Reports\AccountsOperationsMovie.cs"
+                    DependentUpon = "AccountsOperationsMovie.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\AccountsOperationsMovieOrg.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "AccountsOperationsMovieOrg.cs"
+                />
+                <File
+                    RelPath = "_Reports\AccountsOperationsMovieOrg.cs"
+                    DependentUpon = "AccountsOperationsMovieOrg.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\AccountsStates.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "AccountsStates.cs"
+                />
+                <File
+                    RelPath = "_Reports\AccountsStates.cs"
+                    DependentUpon = "AccountsStates.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\CreditOperations.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CreditOperations.cs"
+                />
+                <File
+                    RelPath = "_Reports\CreditOperations.cs"
+                    DependentUpon = "CreditOperations.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\CreditPoints.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CreditPoints.cs"
+                />
+                <File
+                    RelPath = "_Reports\CreditPoints.cs"
+                    DependentUpon = "CreditPoints.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\CreditsOperationsGroups.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CreditsOperationsGroups.cs"
+                />
+                <File
+                    RelPath = "_Reports\CreditsOperationsGroups.cs"
+                    DependentUpon = "CreditsOperationsGroups.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\CreditsStates.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "CreditsStates1.cs"
+                />
+                <File
+                    RelPath = "_Reports\CreditsStates1.cs"
+                    DependentUpon = "CreditsStates.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\PaymentOrder.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "PaymentOrder.cs"
+                />
+                <File
+                    RelPath = "_Reports\PaymentOrder.cs"
+                    DependentUpon = "PaymentOrder.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "_Reports\RepPreview.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "_Reports\RepPreview.resx"
+                    DependentUpon = "RepPreview.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "_Reports\SettlementAccountsOperationsMovie.rpt"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "CrystalDecisions.VSShell.CodeGen.ReportCodeGenerator"
+                    LastGenOutput = "SettlementAccountsOperationsMovie.cs"
+                />
+                <File
+                    RelPath = "_Reports\SettlementAccountsOperationsMovie.cs"
+                    DependentUpon = "SettlementAccountsOperationsMovie.rpt"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsAllAccounts.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAllAccounts.cs"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsAllAccounts.cs"
+                    DependentUpon = "dsAllAccounts.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsAllAccounts.xsx"
+                    DependentUpon = "dsAllAccounts.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsBalanceAccountsState.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBalanceAccountsState.cs"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsBalanceAccountsState.cs"
+                    DependentUpon = "dsBalanceAccountsState.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsBankAccountsStates.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBankAccountsStates.cs"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsBankAccountsStates.cs"
+                    DependentUpon = "dsBankAccountsStates.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsBankAccountsStates.xsx"
+                    DependentUpon = "dsBankAccountsStates.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsClientsBalances.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsClientsBalances.cs"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsClientsBalances.cs"
+                    DependentUpon = "dsClientsBalances.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsClientsBalances.xsx"
+                    DependentUpon = "dsClientsBalances.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsClientsGroupsBalances.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsClientsGroupsBalances.cs"
+                />
+                <File
+                    RelPath = "BLL\Accounts\DataSets\dsClientsGroupsBalances.cs"
+                    DependentUpon = "dsClientsGroupsBalances.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccountsStatementsList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAccountsStatementsList.cs"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccountsStatementsList.cs"
+                    DependentUpon = "dsAccountsStatementsList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccountsStatementsList.xsx"
+                    DependentUpon = "dsAccountsStatementsList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAccStatementsList.cs"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsList.cs"
+                    DependentUpon = "dsAccStatementsList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsList.xsx"
+                    DependentUpon = "dsAccStatementsList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsAccStatementsListDetails.cs"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.cs"
+                    DependentUpon = "dsAccStatementsListDetails.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsAccStatementsListDetails.xsx"
+                    DependentUpon = "dsAccStatementsListDetails.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsPaymList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPaymList.cs"
+                />
+                <File
+                    RelPath = "BLL\AccountStatemets\DataSets\dsPaymList.cs"
+                    DependentUpon = "dsPaymList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Bank\coBanks.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Bank\coBanks.resx"
+                    DependentUpon = "coBanks.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Bank\DataSets\dsBanks.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsBanks.cs"
+                />
+                <File
+                    RelPath = "BLL\Bank\DataSets\dsBanks.cs"
+                    DependentUpon = "dsBanks.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Bank\DataSets\dsBanks.xsx"
+                    DependentUpon = "dsBanks.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\City\coCities.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\City\coCities.resx"
+                    DependentUpon = "coCities.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\City\DataSets\dsCities.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCities.cs"
+                />
+                <File
+                    RelPath = "BLL\City\DataSets\dsCities.cs"
+                    DependentUpon = "dsCities.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\coClientEx.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Clients\coClientEx.resx"
+                    DependentUpon = "coClientEx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Clients\coInterestRates.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Clients\coInterestRates.resx"
+                    DependentUpon = "coInterestRates.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsClients.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsClients.cs"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsClients.cs"
+                    DependentUpon = "dsClients.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsClients.xsx"
+                    DependentUpon = "dsClients.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsGroups.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsGroups.cs"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsGroups.cs"
+                    DependentUpon = "dsGroups.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsGroups.xsx"
+                    DependentUpon = "dsGroups.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsInterestRate.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsInterestRate.cs"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsInterestRate.cs"
+                    DependentUpon = "dsInterestRate.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsInterestRate.xsx"
+                    DependentUpon = "dsInterestRate.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsInterestRateList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsInterestRateList.cs"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsInterestRateList.cs"
+                    DependentUpon = "dsInterestRateList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsOrgsClients.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgsClients.cs"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsOrgsClients.cs"
+                    DependentUpon = "dsOrgsClients.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Clients\DataSets\dsOrgsClients.xsx"
+                    DependentUpon = "dsOrgsClients.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\coRequest.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\coRequest.resx"
+                    DependentUpon = "coRequest.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsClientsRequests.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsClientsRequests.cs"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsClientsRequests.cs"
+                    DependentUpon = "dsClientsRequests.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsClientsRequests.xsx"
+                    DependentUpon = "dsClientsRequests.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsPrevClientRequest.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPrevClientRequest.cs"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsPrevClientRequest.cs"
+                    DependentUpon = "dsPrevClientRequest.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsPrevClientRequest.xsx"
+                    DependentUpon = "dsPrevClientRequest.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqState.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsReqState.cs"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqState.cs"
+                    DependentUpon = "dsReqState.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqState.xsx"
+                    DependentUpon = "dsReqState.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqTypes.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsReqTypes.cs"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqTypes.cs"
+                    DependentUpon = "dsReqTypes.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\ClientsRequests\DataSets\dsReqTypes.xsx"
+                    DependentUpon = "dsReqTypes.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\coCreditsPoints.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Credits\coCreditsPoints.resx"
+                    DependentUpon = "coCreditsPoints.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCredits.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCredits.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCredits.cs"
+                    DependentUpon = "dsCredits.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCredits.xsx"
+                    DependentUpon = "dsCredits.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsDetails.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsDetails.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsDetails.cs"
+                    DependentUpon = "dsCreditsDetails.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsDetails.xsx"
+                    DependentUpon = "dsCreditsDetails.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsListSummary.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsListSummary.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsListSummary.cs"
+                    DependentUpon = "dsCreditsListSummary.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsOperations.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsOperations.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsOperations.cs"
+                    DependentUpon = "dsCreditsOperations.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsOperations.xsx"
+                    DependentUpon = "dsCreditsOperations.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPoints.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPoints.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsPoints.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPoints.xsx"
+                    DependentUpon = "dsCreditsPoints.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPointsInfoList.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPointsInfoList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsPointsInfoList.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsPointsInfoList.xsx"
+                    DependentUpon = "dsCreditsPointsInfoList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsSummary.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCreditsSummary.cs"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsSummary.cs"
+                    DependentUpon = "dsCreditsSummary.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Credits\DataSets\dsCreditsSummary.xsx"
+                    DependentUpon = "dsCreditsSummary.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Currency\coCurrency.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Currency\coCurrency.resx"
+                    DependentUpon = "coCurrency.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurr.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCurr.cs"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurr.cs"
+                    DependentUpon = "dsCurr.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurr.xsx"
+                    DependentUpon = "dsCurr.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurrHistory.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsCurrHistory.cs"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurrHistory.cs"
+                    DependentUpon = "dsCurrHistory.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Currency\DataSets\dsCurrHistory.xsx"
+                    DependentUpon = "dsCurrHistory.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\coOrgAccount.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Orgs\coOrgAccount.resx"
+                    DependentUpon = "coOrgAccount.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Orgs\UsersOrgsAndAccounts.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Orgs\UsersOrgsAndAccounts.resx"
+                    DependentUpon = "UsersOrgsAndAccounts.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Orgs\ñoOrgs.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BLL\Orgs\ñoOrgs.resx"
+                    DependentUpon = "ñoOrgs.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgs.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgs.cs"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgs.cs"
+                    DependentUpon = "dsOrgs.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgs.xsx"
+                    DependentUpon = "dsOrgs.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccount.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgsAccount.cs"
+                    CustomToolNamespace = "BPS"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccount.cs"
+                    DependentUpon = "dsOrgsAccount.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccount.xsx"
+                    DependentUpon = "dsOrgsAccount.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccountAccess.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgsAccountAccess.cs"
+                    CustomToolNamespace = "BPS"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccountAccess.cs"
+                    DependentUpon = "dsOrgsAccountAccess.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccountAccess.xsx"
+                    DependentUpon = "dsOrgsAccountAccess.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccounts.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgsAccounts.cs"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccounts.cs"
+                    DependentUpon = "dsOrgsAccounts.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsOrgsAccounts.xsx"
+                    DependentUpon = "dsOrgsAccounts.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUserOrgsAccounts.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUserOrgsAccounts.cs"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUserOrgsAccounts.cs"
+                    DependentUpon = "dsUserOrgsAccounts.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUserOrgsAccounts.xsx"
+                    DependentUpon = "dsUserOrgsAccounts.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUsers.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUsers.cs"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUsers.cs"
+                    DependentUpon = "dsUsers.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.cs"
+                    DependentUpon = "dsUsersOrgsAndAccounts.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Orgs\DataSets\dsUsersOrgsAndAccounts.xsx"
+                    DependentUpon = "dsUsersOrgsAndAccounts.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsOrgAccountsUList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgAccountsUList.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsOrgAccountsUList.cs"
+                    DependentUpon = "dsOrgAccountsUList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsOrgsUList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsOrgsUList.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsOrgsUList.cs"
+                    DependentUpon = "dsOrgsUList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsOrgsUList.xsx"
+                    DependentUpon = "dsOrgsUList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPaymentOrderList.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderList.cs"
+                    DependentUpon = "dsPaymentOrderList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderList.xsx"
+                    DependentUpon = "dsPaymentOrderList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderListX.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPaymentOrderListX.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderListX.cs"
+                    DependentUpon = "dsPaymentOrderListX.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentOrderListX.xsx"
+                    DependentUpon = "dsPaymentOrderListX.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPaymentsOrdersLinkHistory.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.cs"
+                    DependentUpon = "dsPaymentsOrdersLinkHistory.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersLinkHistory.xsx"
+                    DependentUpon = "dsPaymentsOrdersLinkHistory.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.cs"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsPaymentsOrdersUnknownList.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsPaymentsOrdersUnknownList.xsx"
+                    DependentUpon = "dsPaymentsOrdersUnknownList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsRequestsNotLinked.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsRequestsNotLinked.cs"
+                />
+                <File
+                    RelPath = "BLL\PaymentOrders\DataSets\dsRequestsNotLinked.cs"
+                    DependentUpon = "dsRequestsNotLinked.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsLastPurposeList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsLastPurposeList.cs"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsLastPurposeList.cs"
+                    DependentUpon = "dsLastPurposeList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransactionList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsTransactionList.cs"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransactionList.cs"
+                    DependentUpon = "dsTransactionList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransactionList.xsx"
+                    DependentUpon = "dsTransactionList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransSumList.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsTransSumList.cs"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransSumList.cs"
+                    DependentUpon = "dsTransSumList.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsTransSumList.xsx"
+                    DependentUpon = "dsTransSumList.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsUListOrgs.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUListOrgs.cs"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsUListOrgs.cs"
+                    DependentUpon = "dsUListOrgs.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsUListOrgsAccounts.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "dsUListOrgsAccounts.cs"
+                />
+                <File
+                    RelPath = "BLL\Transactions\DataSets\dsUListOrgsAccounts.cs"
+                    DependentUpon = "dsUListOrgsAccounts.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </CSHARP>
+</VisualStudioProject>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsPaymentOrderList" targetNamespace="http://www.tempuri.org/dsPaymentOrderList.xsd" xmlns:mstns="http://www.tempuri.org/dsPaymentOrderList.xsd" xmlns="http://www.tempuri.org/dsPaymentOrderList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsPaymentOrderList" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="PaymentsOrdersList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PaymentOrderID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="PaymentOrderDate" type="xs:dateTime" />
+                            <xs:element name="PaymentNo" type="xs:string" />
+                            <xs:element name="OrgAccountID" type="xs:int" />
+                            <xs:element name="OrgAccountIDCorr" type="xs:int" />
+                            <xs:element name="Direction" type="xs:boolean" />
+                            <xs:element name="PaymentOrderSum" type="xs:double" />
+                            <xs:element name="PaymentOrderPurpose" type="xs:string" minOccurs="0" />
+                            <xs:element name="Remarks" type="xs:string" minOccurs="0" />
+                            <xs:element name="PaymentOrderStatusID" type="xs:int" />
+                            <xs:element name="IsPrinted" type="xs:boolean" />
+                            <xs:element name="HeaderDate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="OrgID" type="xs:int" />
+                            <xs:element name="RAccount" type="xs:string" />
+                            <xs:element name="AccountID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="CurrencyID" type="xs:string" />
+                            <xs:element name="OrgName" type="xs:string" />
+                            <xs:element name="IsInner" type="xs:boolean" />
+                            <xs:element name="IsSpecial" type="xs:boolean" />
+                            <xs:element name="IsNormal" type="xs:boolean" />
+                            <xs:element name="RAccountCorr" type="xs:string" />
+                            <xs:element name="OrgIDCorr" type="xs:int" />
+                            <xs:element name="OrgNameCorr" type="xs:string" />
+                            <xs:element name="IsNormalCorr" type="xs:boolean" />
+                            <xs:element name="IsInnerCorr" type="xs:boolean" />
+                            <xs:element name="IsSpecialCorr" type="xs:boolean" />
+                            <xs:element name="CurrencyIDCorr" type="xs:string" />
+                            <xs:element name="AccountIDCorr" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+                            <xs:element name="HeaderID" type="xs:int" minOccurs="0" />
+                            <xs:element name="PaymentOrderStatusName" type="xs:string" />
+                            <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                            <xs:element name="IsInnerClient" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="AccountStatementID" type="xs:int" minOccurs="0" />
+                            <xs:element name="Debit_x0020_" type="xs:double" minOccurs="0" msdata:Expression="iif(Direction,null,PaymentOrderSum)" />
+                            <xs:element name="Credit" type="xs:double" minOccurs="0" msdata:Expression="iif(Direction,PaymentOrderSum,null)" />
+                            <xs:element name="BankName" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeBIK" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="KAccount" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CityName" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="OrgName2" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="BankNameCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeBIKCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="KAccountCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CityNameCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="OrgName2Corr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeINN" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeKPP" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeINNCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="CodeKPPCorr" type="xs:string" minOccurs="0" nillable="true" />
+                            <xs:element name="AccOrgName" type="xs:string" minOccurs="0" />
+                            <xs:element name="AccOrgNameCorr" type="xs:string" minOccurs="0" />
+                            <xs:element name="POOrgName" type="xs:string" minOccurs="0" msdata:Expression="IIF(AccOrgName IS NOT NULL, AccOrgName, OrgName)" />
+                            <xs:element name="POOrgNameCorr" type="xs:string" minOccurs="0" msdata:Expression="IIF(AccOrgNameCorr IS NOT NULL, AccOrgNameCorr, OrgNameCorr)" />
+                            <xs:element name="RAccountCutted" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

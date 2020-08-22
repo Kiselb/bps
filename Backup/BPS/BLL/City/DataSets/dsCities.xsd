@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsCities" targetNamespace="http://www.tempuri.org/dsCities.xsd" xmlns:mstns="http://www.tempuri.org/dsCities.xsd" xmlns="http://www.tempuri.org/dsCities.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsCities" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Cities">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CityID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="CityName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cities" />
+      <xs:field xpath="mstns:CityID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

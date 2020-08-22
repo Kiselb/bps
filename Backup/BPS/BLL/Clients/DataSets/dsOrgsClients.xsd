@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsOrgsClients" targetNamespace="http://www.tempuri.org/dsOrgsClients.xsd" xmlns:mstns="http://www.tempuri.org/dsOrgsClients.xsd" xmlns="http://www.tempuri.org/dsOrgsClients.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsOrgsClients" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OrgsClients">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ClientID" type="xs:int" />
+							<xs:element name="OrgID" type="xs:int" />
+							<xs:element name="Direction" type="xs:unsignedByte" />
+							<xs:element name="IsAvailable" type="xs:boolean" />
+							<xs:element name="OrgName" type="xs:string" />
+							<xs:element name="CodeINN" type="xs:string" />
+							<xs:element name="IsRemoved" type="xs:boolean" />
+							<xs:element name="CodeKPP" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="dsOrgsClientsKey1">
+			<xs:selector xpath=".//mstns:OrgsClients" />
+			<xs:field xpath="mstns:ClientID" />
+			<xs:field xpath="mstns:OrgID" />
+			<xs:field xpath="mstns:Direction" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

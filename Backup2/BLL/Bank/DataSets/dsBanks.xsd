@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsBanks" targetNamespace="http://www.tempuri.org/dsBanks.xsd" xmlns:mstns="http://www.tempuri.org/dsBanks.xsd"
+	xmlns="http://www.tempuri.org/dsBanks.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsBanks" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Banks">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="BankName" type="xs:string" nillable="true" />
+							<xs:element name="CityID" type="xs:int" nillable="true" />
+							<xs:element name="CodeBIK" type="xs:string" nillable="true" />
+							<xs:element name="KAccount" type="xs:string" nillable="true" />
+							<xs:element name="CityName" type="xs:string" nillable="true" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsBanksKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Banks" />
+			<xs:field xpath="mstns:BankID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

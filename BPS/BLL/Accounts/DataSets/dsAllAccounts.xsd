@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="dsAllAccounts" targetNamespace="http://www.tempuri.org/dsAllAccounts.xsd" xmlns:mstns="http://www.tempuri.org/dsAllAccounts.xsd"
+	xmlns="http://www.tempuri.org/dsAllAccounts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="dsAllAccounts" msdata:IsDataSet="true" msdata:Locale="ru-RU">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SelectAllAccounts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ClientID" type="xs:int" minOccurs="0" />
+							<xs:element name="Saldo" type="xs:double" />
+							<xs:element name="SumSent" type="xs:double" />
+							<xs:element name="SumReserved" type="xs:double" />
+							<xs:element name="SumWaited" type="xs:double" />
+							<xs:element name="IsDebit" type="xs:boolean" />
+							<xs:element name="CurrencyID" type="xs:string" />
+							<xs:element name="IsInner" type="xs:boolean" minOccurs="0" />
+							<xs:element name="AccountID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="RAccount" type="xs:string" minOccurs="0" />
+							<xs:element name="OrgName" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeINN" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientGroupID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientsIsInner" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IsSpecial" type="xs:boolean" minOccurs="0" />
+							<xs:element name="TypeName" type="xs:string" />
+							<xs:element name="ForInnerOnly" type="xs:boolean" />
+							<xs:element name="AccountTypeID" type="xs:int" />
+							<xs:element name="OrgID" type="xs:int" minOccurs="0" />
+							<xs:element name="OrgsIsSpecial" type="xs:boolean" minOccurs="0" />
+							<xs:element name="ClientGroupName" type="xs:string" minOccurs="0" />
+							<xs:element name="BankID" type="xs:int" minOccurs="0" />
+							<xs:element name="BankName" type="xs:string" minOccurs="0" />
+							<xs:element name="CityID" type="xs:int" minOccurs="0" />
+							<xs:element name="CityName" type="xs:string" minOccurs="0" />
+							<xs:element name="CodeBIK" type="xs:string" minOccurs="0" />
+							<xs:element name="KAccount" type="xs:string" minOccurs="0" />
+							<xs:element name="CurrencyRate" type="xs:double" />
+							<xs:element name="IsBase" type="xs:boolean" />
+							<xs:element name="IsNormal" type="xs:boolean" minOccurs="0" />
+							<xs:element name="DisposableSum_x0020_" type="xs:double" minOccurs="0" msdata:Expression="Saldo-SumReserved" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SelectAccountsOperations">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="InitDate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CompleteDate" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OperationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TransactionOperationID" type="xs:int" />
+							<xs:element name="OperationIsPrimary" type="xs:boolean" />
+							<xs:element name="OperationSum" type="xs:double" />
+							<xs:element name="OperationDir" type="xs:boolean" />
+							<xs:element name="AccountID" type="xs:int" />
+							<xs:element name="TransactionTypeName" type="xs:string" minOccurs="0" />
+							<xs:element name="PostedDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CommitedDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OperationTypeID" type="xs:int" />
+							<xs:element name="PaymentNo" type="xs:string" minOccurs="0" />
+							<xs:element name="PaymentOrderDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PaymentsOrdersDirection" type="xs:boolean" minOccurs="0" />
+							<xs:element name="OrgName" type="xs:string" minOccurs="0" />
+							<xs:element name="OrgNameCorr" type="xs:string" minOccurs="0" />
+							<xs:element name="OrgID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="OrgIDCorr" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="AccountTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClientID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int"
+								minOccurs="0" />
+							<xs:element name="ClientGroupID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientGroupName" type="xs:string" minOccurs="0" />
+							<xs:element name="Приход_x0020_" type="xs:double" minOccurs="0" msdata:Expression="IIF(OperationDir,OperationSum, null)" />
+							<xs:element name="Расход_x0020_" type="xs:double" minOccurs="0" msdata:Expression="IIF(OperationDir, null,OperationSum)" />
+							<xs:element name="TransactionTypeNameX_x0020_" type="xs:string" minOccurs="0" msdata:Expression="iif(OperationTypeID=1,'%%',TransactiontypeName)" />
+							<xs:element name="Плательщик" type="xs:string" minOccurs="0" msdata:Expression="iif(PaymentsOrdersDirection,OrgNameCorr,OrgName)" />
+							<xs:element name="Получатель" type="xs:string" minOccurs="0" msdata:Expression="iif(PaymentsOrdersDirection,OrgName,OrgNameCorr)" />
+							<xs:element name="CurrencyID" type="xs:string" minOccurs="0" />
+							<xs:element name="RAccount" type="xs:string" minOccurs="0" />
+							<xs:element name="CurrencyRate" type="xs:double" minOccurs="0" />
+							<xs:element name="TransactionCompleted" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HeaderDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FinishDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PaymentOrderPurpose" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
